@@ -109,5 +109,5 @@ Before running, please download the preprocessed datasets from here: https://www
 
 ```
 X_train, y_train, X_test, y_test = init(label = 'class', train = 'YourTrainSet.csv', test = 'YourTestSet.csv', split = False) # 2 different files
-X_train, y_train, X_test, y_test = init(label = 'class', train = 'MainDf'.csv, test = 'MainDf'.csv, split = True) # Only one csv
+X_train, y_train, X_test, y_test = init(label = 'class', train = 'MainDf.csv', test = '', split = True) # Only one csv
 ```
