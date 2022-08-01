@@ -1,17 +1,12 @@
 # hoeffdingTree
 This is a test implementation for HoeffdingTree classifier implementation from scikit-multiflow. HoeffdingTree is also known as Very Fast Decision Tree (VFDT) is an incremental, anytime decision tree induction algorithm which is capable of learning from massive data streams.
 
-APS Dataset:
+## APS Dataset:
 https://www.kaggle.com/datasets/uciml/aps-failure-at-scania-trucks-data-set/code?select=aps_failure_test_set.csv
 Results:
 Hoeffding Tree accuracy: 0.9616 Error Rate: 3.8
 
-Beijing Air Quality Dataset:
-https://archive.ics.uci.edu/ml/machine-learning-databases/00501/
-Results:
-Regressor mean absolute error: 5.5459
-
-HT Classification Model Parameters (APS Dataset):
+### HT Classification Model Parameters (APS Dataset):
 binary_split': False,
 Hoeffding Tree accuracy: 0.9616 
 'grace_period': 200,
@@ -27,7 +22,7 @@ Hoeffding Tree accuracy: 0.9616
 'stop_mem_management': False,
 'tie_threshold': 0.05
 
-Details of the Tree:
+### Details of the Tree:
 Active leaf byte size estimate: 0.0,
 Active learning nodes: 5,
 Byte size estimate overhead: 1.0,
@@ -36,8 +31,12 @@ Tree depth: 3,
 Tree size (leaves): 5,
 Tree size (nodes): 9
 
+## Beijing Air Quality Dataset:
+https://archive.ics.uci.edu/ml/machine-learning-databases/00501/
+Results:
+Regressor mean absolute error: 5.5459
 
-HT Regression Model Parameters (Beijing Air Quality):
+### HT Regression Model Parameters (Beijing Air Quality):
 {'binary_split': False,
  'grace_period': 200,
  'leaf_prediction': 'perceptron',
@@ -55,7 +54,7 @@ HT Regression Model Parameters (Beijing Air Quality):
  'stop_mem_management': False,
  'tie_threshold': 0.05}
 
-Details of the Tree:
+### Details of the Tree:
 {'Active leaf byte size estimate': 0.0,
  'Active learning nodes': 17,
  'Byte size estimate overhead': 1.0,
