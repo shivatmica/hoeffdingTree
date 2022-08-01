@@ -41,7 +41,7 @@ hoeffding(X_train, y_train, max_samples, n_samples, classification = False, regr
 # `test.py`
 `test.py` contains a short 3-line piece of code, on a sample regression dataset. We input the dataset, and call ```init()``` on it. After that we can simply call the model using the ```hoeffding()``` function.
 
-Before running, please download the preprocessed datasets from here: https://www.kaggle.com/datasets/uciml/aps-failure-at-scania-trucks-data-set/code?select=aps_failure_test_set.csv, and add the paths in the train and test parameters.
+Before running, please download the preprocessed datasets from [here](https://www.kaggle.com/datasets/uciml/aps-failure-at-scania-trucks-data-set/code?select=aps_failure_test_set.csv), and add the paths in the train and test parameters.
 
 ```
 X_train, y_train, X_test, y_test = init(label = 'class', train = 'YourTrainSet.csv', test = 'YourTestSet.csv', split = False) # 2 different files
