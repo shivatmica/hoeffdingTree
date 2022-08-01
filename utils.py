@@ -1,11 +1,9 @@
 import numpy as np
 import pandas as pd
-from skmultiflow.data import SEAGenerator
-from skmultiflow.trees import HoeffdingTreeClassifier
-from skmultiflow.data import RegressionGenerator
-from skmultiflow.trees import HoeffdingTreeRegressor
-from sklearn.model_selection import train_test_split
 
+from sklearn.model_selection import train_test_split
+from skmultiflow.data import RegressionGenerator, SEAGenerator
+from skmultiflow.trees import HoeffdingTreeClassifier, HoeffdingTreeRegressor
 
 def init(
     label,
