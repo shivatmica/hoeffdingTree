@@ -1,4 +1,69 @@
 # hoeffdingTree
+This is a test implementation for HoeffdingTree classifier implementation from scikit-multiflow. HoeffdingTree is also known as Very Fast Decision Tree (VFDT) is an incremental, anytime decision tree induction algorithm which is capable of learning from massive data streams.
+
+APS Dataset:
+https://www.kaggle.com/datasets/uciml/aps-failure-at-scania-trucks-data-set/code?select=aps_failure_test_set.csv
+Results:
+Hoeffding Tree accuracy: 0.9616 Error Rate: 3.8
+
+Beijing Air Quality Dataset:
+https://archive.ics.uci.edu/ml/machine-learning-databases/00501/
+Results:
+Regressor mean absolute error: 5.5459
+
+HT Classification Model Parameters (APS Dataset):
+binary_split': False,
+Hoeffding Tree accuracy: 0.9616 
+'grace_period': 200,
+'leaf_prediction': 'nb',
+'max_byte_size': 33554432,
+'memory_estimate_period': 1000000,
+'nb_threshold': 0,
+'no_preprune': False,
+'nominal_attributes': None,
+'remove_poor_atts': False,
+'split_confidence': 1e-07,
+'split_criterion': 'info_gain',
+'stop_mem_management': False,
+'tie_threshold': 0.05
+
+Details of the Tree:
+Active leaf byte size estimate: 0.0,
+Active learning nodes: 5,
+Byte size estimate overhead: 1.0,
+Inactive leaf byte size estimate: 0.0,
+Tree depth: 3,
+Tree size (leaves): 5,
+Tree size (nodes): 9
+
+
+HT Regression Model Parameters (Beijing Air Quality):
+{'binary_split': False,
+ 'grace_period': 200,
+ 'leaf_prediction': 'perceptron',
+ 'learning_ratio_const': True,
+ 'learning_ratio_decay': 0.001,
+ 'learning_ratio_perceptron': 0.02,
+ 'max_byte_size': 33554432,
+ 'memory_estimate_period': 1000000,
+ 'nb_threshold': 0,
+ 'no_preprune': False,
+ 'nominal_attributes': None,
+ 'random_state': None,
+ 'remove_poor_atts': False,
+ 'split_confidence': 1e-07,
+ 'stop_mem_management': False,
+ 'tie_threshold': 0.05}
+
+Details of the Tree:
+{'Active leaf byte size estimate': 0.0,
+ 'Active learning nodes': 17,
+ 'Byte size estimate overhead': 1.0,
+ 'Inactive leaf byte size estimate': 0.0,
+ 'Tree depth': 6,
+ 'Tree size (leaves)': 17,
+ 'Tree size (nodes)': 33}
+
 
 # utils.py
 utils.py containes some inline functions, so that a user can use the hoeffdingTreeClassifier or Regressor to do their own tasks, without performing all the steps of splitting data or actually implementing the model. The user only has to enter a number of parameters which include details of the user's preferences. Through those parameters, the functions return a single value.
@@ -38,3 +103,6 @@ hoeffding(X_train, y_train, max_samples, n_samples, classification = False, regr
 
 # test.py
 test.py contains a short 3-line piece of code, on a sample regression dataset. We input the dataset, and call ```init()``` on it. After that we can simply call the model using the ```hoeffding()``` function.
+
+
+
