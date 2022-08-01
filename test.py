@@ -8,5 +8,5 @@ if __name__ == "__main__":
         split=True,
     )
     print(
-        hoeffding(X_test, y_test, regression=True, max_samples=100000, n_samples=10000)
+        hoeffding(regression=True, max_samples=100000, n_samples=10000)
     )
